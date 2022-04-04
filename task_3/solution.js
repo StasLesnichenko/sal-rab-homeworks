@@ -9,19 +9,7 @@ function renderCartItem(item) {
     // title - наименование
     // price - цена
     // count - количество
-    item = {id: 1, title: 'Пицца', count: `5`, price: `500` };
-    //product.id = 1;
-    //product.title = 'Пицца';
-    //product.count = 5;
-    //product.price = 500;
-    let itemCountText = '';
-    itemCountText = itemCountText + product.count;
-    itemCountText = itemCountText + ` × `;
-    itemCountText = itemCountText + product.price;
-    itemCountText = itemCountText + ` ₽ = `;
-    let sum = product.price * product.count;
-    itemCountText = itemCountText + sum;
-    itemCountText = itemCountText + ` ₽`;
+    let itemCountText = `${product.count} × ${product.price} ₽ = ${product.count * product.price} ₽`;
 
     // сформируйте строку itemCountText вида:
     // количество × цена ₽ = стоимость ₽
