@@ -8,15 +8,14 @@ function parseProducts(JSON) {
     let data = JSON.parse(json);
     let products = data.products;
     // Верните как результат функции свойство products объекта data
-    return parseProducts(products);
+    return products;
 }
 
 function renderProductsCards(json) {
     clearProducts();
-    products = parseProducts(json);
+    products = parseProducts(JSON);
     let length = products.length;
     for (let i = 0 ; i < length; i +=1);{
-        let addProduct;
         addProduct(products[i]);
     }
     
